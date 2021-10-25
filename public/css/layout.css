@@ -22,7 +22,19 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
-body { background: #0f0f0f; }
+body { background: #fff; }
+
+#input-box{
+   margin-top: 10px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+#typography{
+   font-size: 20px;
+   color: black;
+}
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
@@ -283,7 +295,7 @@ ul#nav li.current a { color: #fe6928; }
 /* ------------------------------------------------------------------ */
 
 #careers {
-   background: #000524;
+   background: white;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
@@ -294,12 +306,12 @@ ul#nav li.current a { color: #fe6928; }
 
 #careers h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
-   color: #fff;
+   color: black;
    margin-bottom: 12px;
 }
 #careers p {
    line-height: 30px;
-   color: #ccc;
+   color: black;
 }
 #careers .profile-pic {
    position: relative;
@@ -1267,4 +1279,8 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 .github-btn{
    background-color: #34495e !important;
+}
+
+h2.form-headers {
+   text-align: center;
 }
