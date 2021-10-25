@@ -7,7 +7,7 @@ class About extends Component {
 
     const name = this.props.data.name;
     const profilepic = "images/" + this.props.data.image;
-    const aboutText = this.props.data.aboutText;
+    const bio = this.props.data.bio;
     const street = this.props.data.address.street;
     const city = this.props.data.address.city;
     const state = this.props.data.address.state;
@@ -17,7 +17,7 @@ class About extends Component {
     const resumeDownload = this.props.data.resumedownload;
 
     return (
-      <section id="about">
+      <section id="careers">
         <Fade duration={1000}>
           <div className="row">
             <div className="three columns">
@@ -28,8 +28,27 @@ class About extends Component {
               />
             </div>
             <div className="nine columns main-col">
-              <h2>About Us</h2>
-              <p>{aboutText}</p>
+              <h2>Careers</h2>
+
+              <p>{bio}</p>
+              <div className="row">
+                <div className="columns contact-details">
+                  <h2>Contact Details</h2>
+                  <p className="address">
+                    <span>{name}</span>
+                    <br />
+                    <span>
+                      {street}
+                      <br />
+                      {city} {state}, {zip}
+                    </span>
+                    <br />
+                    <span>{phone}</span>
+                    <br />
+                    <span>{email}</span>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </Fade>

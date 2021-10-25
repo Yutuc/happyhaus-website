@@ -225,6 +225,107 @@ ul#nav li.current a { color: #fe6928; }
    font-size: 20px;
 }
 
+/* ------------------------------------------------------------------ */
+/* c. Services Section
+/* ------------------------------------------------------------------ */
+
+#services {
+   background: #000524;
+   padding-top: 96px;
+   padding-bottom: 66px;
+   overflow: hidden;
+}
+
+#services a, #services a:visited  { color: #fff; }
+#services a:hover, #services a:focus { color: #0762f9; }
+
+#services h2 {
+   font: 22px/30px 'opensans-bold', sans-serif;
+   color: #fff;
+   margin-bottom: 12px;
+}
+#services p {
+   line-height: 30px;
+   color: #ccc;
+}
+#services ul {
+   line-height: 30px;
+   color: #fff;
+}
+#services .profile-pic {
+   position: relative;
+   width: 120px;
+   height: 120px;
+   border-radius: 100%;
+}
+
+#services .contact-details { width: 41.66667%; }
+#services .download {
+   width: 58.33333%;
+   padding-top: 6px;
+}
+#services .main-col { padding-right: 5%; }
+#services .download .button {
+   margin-top: 6px;
+   background: #444;
+}
+#services .download .button:hover {
+   background: #fff;
+   color: #2B2B2B;
+}
+#services .download .button i {
+   margin-right: 15px;
+   font-size: 20px;
+}
+
+/* ------------------------------------------------------------------ */
+/* c. Careers Section
+/* ------------------------------------------------------------------ */
+
+#careers {
+   background: #000524;
+   padding-top: 96px;
+   padding-bottom: 66px;
+   overflow: hidden;
+}
+
+#careers a, #services a:visited  { color: #fff; }
+#careers a:hover, #careers a:focus { color: #0762f9; }
+
+#careers h2 {
+   font: 22px/30px 'opensans-bold', sans-serif;
+   color: #fff;
+   margin-bottom: 12px;
+}
+#careers p {
+   line-height: 30px;
+   color: #ccc;
+}
+#careers .profile-pic {
+   position: relative;
+   width: 120px;
+   height: 120px;
+   border-radius: 100%;
+}
+
+#careers .contact-details { width: 41.66667%; }
+#careers .download {
+   width: 58.33333%;
+   padding-top: 6px;
+}
+#careers .main-col { padding-right: 5%; }
+#careers .download .button {
+   margin-top: 6px;
+   background: #444;
+}
+#careers .download .button:hover {
+   background: #fff;
+   color: #2B2B2B;
+}
+#careers .download .button i {
+   margin-right: 15px;
+   font-size: 20px;
+}
 
 /* ------------------------------------------------------------------ */
 /* d. Resume Section
@@ -785,29 +886,175 @@ call-to-action .button {
 }
 
 /* ------------------------------------------------------------------ */
-/* h. Contact Section
+/* c. About Section
+/* ------------------------------------------------------------------ */
+
+#about {
+   background: #000524;
+   padding-top: 96px;
+   padding-bottom: 66px;
+   overflow: hidden;
+}
+
+#about a, #about a:visited  { color: #fff; }
+#about a:hover, #about a:focus { color: #0762f9; }
+
+#about h2 {
+   font: 22px/30px 'opensans-bold', sans-serif;
+   color: #fff;
+   margin-bottom: 12px;
+}
+#about p {
+   line-height: 30px;
+   color: #ccc;
+}
+#about .profile-pic {
+   position: relative;
+   width: 120px;
+   height: 120px;
+   border-radius: 100%;
+}
+#about .contact-details { width: 41.66667%; }
+#about .download {
+   width: 58.33333%;
+   padding-top: 6px;
+}
+#about .main-col { padding-right: 5%; }
+#about .download .button {
+   margin-top: 6px;
+   background: #444;
+}
+#about .download .button:hover {
+   background: #fff;
+   color: #2B2B2B;
+}
+#about .download .button i {
+   margin-right: 15px;
+   font-size: 20px;
+}
+
+/* ------------------------------------------------------------------ */
+/* c. Services Section
+/* ------------------------------------------------------------------ */
+
+#services {
+   background: #000524;
+   padding-top: 96px;
+   padding-bottom: 66px;
+   overflow: hidden;
+}
+
+#services a, #services a:visited  { color: #fff; }
+#services a:hover, #services a:focus { color: #0762f9; }
+
+#services h2 {
+   font: 22px/30px 'opensans-bold', sans-serif;
+   color: #fff;
+   margin-bottom: 12px;
+}
+#services p {
+   line-height: 30px;
+   color: #ccc;
+}
+#services .profile-pic {
+   position: relative;
+   width: 120px;
+   height: 120px;
+   border-radius: 100%;
+}
+
+#services .contact-details { width: 41.66667%; }
+#services .download {
+   width: 58.33333%;
+   padding-top: 6px;
+}
+#services .main-col { padding-right: 5%; }
+#services .download .button {
+   margin-top: 6px;
+   background: #444;
+}
+#services .download .button:hover {
+   background: #fff;
+   color: #2B2B2B;
+}
+#services .download .button i {
+   margin-right: 15px;
+   font-size: 20px;
+}
+
+/* ------------------------------------------------------------------ */
+/* c. Contact Section
 /* ------------------------------------------------------------------ */
 
 #contact {
+   background: #000524;
+   padding-top: 96px;
+   padding-bottom: 66px;
+   overflow: hidden;
+}
+
+#contact a, #services a:visited  { color: #fff; }
+#contact a:hover, #contact a:focus { color: #0762f9; }
+
+#contact h2 {
+   font: 22px/30px 'opensans-bold', sans-serif;
+   color: #fff;
+   margin-bottom: 12px;
+}
+#contact p {
+   line-height: 30px;
+   color: #ccc;
+}
+#contact .profile-pic {
+   position: relative;
+   width: 120px;
+   height: 120px;
+   border-radius: 100%;
+}
+
+#contact .contact-details { width: 41.66667%; }
+#contact .download {
+   width: 58.33333%;
+   padding-top: 6px;
+}
+#contact .main-col { padding-right: 5%; }
+#contact .download .button {
+   margin-top: 6px;
+   background: #444;
+}
+#contact .download .button:hover {
+   background: #fff;
+   color: #2B2B2B;
+}
+#contact .download .button i {
+   margin-right: 15px;
+   font-size: 20px;
+}
+
+/* ------------------------------------------------------------------ */
+/* h. Quote Section
+/* ------------------------------------------------------------------ */
+
+#quote {
    background: #191919;
    padding-top: 96px;
    padding-bottom: 102px;
    color: #636363;
 }
-#contact .section-head { margin-bottom: 42px; }
+#quote .section-head { margin-bottom: 42px; }
 
-#contact a, #contact a:visited  { color: #0762f9; }
-#contact a:hover, #contact a:focus { color: #fff; }
+#quote a, #quote a:visited  { color: #0762f9; }
+#quote a:hover, #quote a:focus { color: #fff; }
 
-#contact h1 {
+#quote h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 3px;
    color: #EBEEEE;
    margin-bottom: 6px;
 }
-#contact h1 span { display: none; }
-#contact h1:before {
+#quote h1 span { display: none; }
+#quote h1:before {
    font-family: 'FontAwesome';
    content: "\f0e0";
 	padding-right: 10px;
@@ -818,21 +1065,21 @@ call-to-action .button {
    color: #ebeeee;
 }
 
-#contact h4 {
+#quote h4 {
    font: 16px/24px 'opensans-bold', sans-serif;
    color: #EBEEEE;
    margin-bottom: 6px;
 }
-#contact p.lead {
+#quote p.lead {
    font: 18px/36px 'opensans-light', sans-serif;
    padding-right: 3%;
 }
-#contact .header-col { padding-top: 6px; }
+#quote .header-col { padding-top: 6px; }
 
 
-/* contact form */
-#contact form { margin-bottom: 30px; }
-#contact label {
+/* quote form */
+#quote form { margin-bottom: 30px; }
+#quote label {
    font: 15px/24px 'opensans-bold', sans-serif;
    margin: 12px 0;
    color: #EBEEEE;
@@ -840,9 +1087,9 @@ call-to-action .button {
 	float: left;
    width: 26%;
 }
-#contact input,
-#contact textarea,
-#contact select {
+#quote input,
+#quote textarea,
+#quote select {
    padding: 10px 20px;
 	color: #eee;
 	background: #373233;
@@ -853,13 +1100,13 @@ call-to-action .button {
    line-height: 24px;
    width: 65%;
 }
-#contact input:focus,
-#contact textarea:focus,
-#contact select:focus {
+#quote input:focus,
+#quote textarea:focus,
+#quote select:focus {
 	color: #fff;
 	background-color: #0762f9;
 }
-#contact button.submit {
+#quote button.submit {
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	color:#fff;
@@ -871,11 +1118,11 @@ call-to-action .button {
 	border-radius: 0px;
    margin-left: 26%;
 }
-#contact button.submit:hover {
+#quote button.submit:hover {
 	color: #0D0D0D;
 	background: #fff;
 }
-#contact span.required {
+#quote span.required {
 	color: #0762f9;
 	font-size: 13px;
 }
@@ -900,7 +1147,6 @@ call-to-action .button {
    left: 18px;
    top: 17px;
 }
-
 
 /* Twitter Feed */
 #twitter {
