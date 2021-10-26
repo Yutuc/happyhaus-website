@@ -17,7 +17,14 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      foo: "bar",
+      firstName: "",
+      lastName: "",
+      email: "",
+      phoneNumber: "",
+      startDate: "",
+      position: "",
+      availability: "",
+      jobApplication: {},
       data: {}
     };
 
@@ -51,8 +58,6 @@ class App extends Component {
         <Services data={this.state.data.main} />
         <About data={this.state.data.main} />
         <Careers data={this.state.data.main} />
-        {/* <Resume data={this.state.data.resume} />
-        <Portfolio data={this.state.data.portfolio} /> */}
         <Contact data={this.state.data.main} />
         <Footer data={this.state.data.main} />
       </div>

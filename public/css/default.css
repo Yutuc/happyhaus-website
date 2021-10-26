@@ -581,7 +581,7 @@ select {
    input[type="checkbox"],
    input[type="radio"] {
        font-size: 15px;
-       color: #737373;
+       color: black;
    }
    
    input[type="checkbox"] { display: inline; }

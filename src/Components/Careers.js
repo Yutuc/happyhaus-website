@@ -8,21 +8,16 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
+import { Radio, RadioGroup } from "@material-ui/core";
+import FormControl from '@material-ui/core/FormControl';
+import AvailabilityRadioButtons from "./AvailabilityRadioButtons";
+import PositionRadioButtons from "./PositionRadioButtons";
 
 class About extends Component {
   render() {
     if (!this.props.data) return null;
 
-    const name = this.props.data.name;
     const profilepic = "images/" + this.props.data.image;
-    const bio = this.props.data.bio;
-    const street = this.props.data.address.street;
-    const city = this.props.data.address.city;
-    const state = this.props.data.address.state;
-    const zip = this.props.data.address.zip;
-    const phone = this.props.data.phone;
-    const email = this.props.data.email;
-    const resumeDownload = this.props.data.resumedownload;
 
     const useStyles = makeStyles((theme) => ({
         finish: {
@@ -35,6 +30,12 @@ class About extends Component {
           borderRadius: "10%",
           fontWeight: "700",
         },
+        largeRadioButton: {
+            "& svg": {
+                width: "1em",
+                height: "1em"
+            }
+        }
     }));
 
     const styles = {
@@ -89,43 +90,9 @@ class About extends Component {
                     </Grid>
                 </Grid>
                 <h2 class="form-headers">Position</h2>
-                <Grid container direction="row" justifyContent="center">
-                    <Grid item xs={4} style={{paddingLeft:"30px"}}>
-                        <FormControlLabel
-                            control={ <Checkbox className={styles.size} /*onChange={props.handleCheckboxes} value={props.answerContent} name={props.answerContent}*//> }
-                            label={<Typography style={{fontSize: 20, color: "black"}}>Cleaner</Typography>}
-                        />
-                    </Grid>
-                    <Grid item xs={4} style={{paddingLeft:"30px"}}>
-                        <FormControlLabel
-                            control={ <Checkbox className={styles.size} /*onChange={props.handleCheckboxes} value={props.answerContent} name={props.answerContent}*//> }
-                            label={<Typography style={{fontSize: 20, color: "black"}}>Site Supervisor</Typography>}
-                        />
-                    </Grid>
-                    <Grid item xs={4} style={{paddingLeft:"30px"}}>
-                    </Grid>
-                </Grid>
+                <PositionRadioButtons />
                 <h2 class="form-headers">Availability</h2>
-                <Grid container direction="row" justifyContent="center">
-                    <Grid item xs={4} style={{paddingLeft:"30px"}}>
-                        <FormControlLabel
-                            control={ <Checkbox className={styles.size} /*onChange={props.handleCheckboxes} value={props.answerContent} name={props.answerContent}*//> }
-                            label={<Typography style={{fontSize: 20, color: "black"}}>Days</Typography>}
-                        />
-                    </Grid>
-                    <Grid item xs={4} style={{paddingLeft:"30px"}}>
-                        <FormControlLabel
-                            control={ <Checkbox className={styles.size} /*onChange={props.handleCheckboxes} value={props.answerContent} name={props.answerContent}*//> }
-                            label={<Typography style={{fontSize: 20, color: "black"}}>Evenings</Typography>}
-                        />
-                    </Grid>
-                    <Grid item xs={4} style={{paddingLeft:"30px"}}>
-                        <FormControlLabel
-                            control={ <Checkbox className={styles.size} /*onChange={props.handleCheckboxes} value={props.answerContent} name={props.answerContent}*//> }
-                            label={<Typography style={{fontSize: 20, color: "black"}}>Nights</Typography>}
-                        />
-                    </Grid>
-                </Grid>
+                <AvailabilityRadioButtons />
                 <Button style={{textTransform: 'none', float: 'right'}} onClick={() => {
                         // if(nameTextFieldValue !== "" && phoneTextFieldValue !== "" && emailTextFieldValue !== "") {
                         //     props.onAnswerSelected(props.question, 
@@ -139,7 +106,7 @@ class About extends Component {
                         //     emailTextFieldValue = "";
                         // }
                         }}>
-                        <Paper className={useStyles.finish} style={{fontSize: 28, color: 'white', backgroundColor: "#07080fdc", padding: .75, borderRadius: "7%", fontWeight: "700"}}>&#160;&#160;&#160;Finish&#160;&#160;&#160;</Paper>
+                        <Paper className={useStyles.finish} style={{fontSize: 28, color: 'white', backgroundColor: "#07080fdc", padding: .75, borderRadius: "7%", fontWeight: "700"}}>&#160;&#160;&#160;Apply&#160;&#160;&#160;</Paper>
                 </Button>
             </div>
           </div>
