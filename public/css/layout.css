@@ -22,7 +22,7 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
-body { background: #fff; }
+body { background: #EDC7B7; }
 
 #input-box{
    margin-top: 10px;
@@ -124,7 +124,7 @@ header .scrolldown a {
    -o-transition: all .3s ease-in-out;
    transition: all .3s ease-in-out;
 }
-header .scrolldown a:hover { color: #0762f9; }
+header .scrolldown a:hover { color: #FBE8A6; }
 
 /* primary navigation
 --------------------------------------------------------------------- */
@@ -147,7 +147,7 @@ header .scrolldown a:hover { color: #0762f9; }
    left: 0;
    top: 0;
 }
-.opaque { background-color: #333; }
+.opaque { background-color: #edc7b7c7; }
 
 /* hide toggle button */
 #nav-wrap > a.mobile-btn { display: none; }
@@ -186,7 +186,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #fe6928; }
+ul#nav li.current a { color: #25274D; }
 
 
 /* ------------------------------------------------------------------ */
@@ -194,7 +194,7 @@ ul#nav li.current a { color: #fe6928; }
 /* ------------------------------------------------------------------ */
 
 #about {
-   background: #000524;
+   background: #5AB9EA;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
@@ -205,12 +205,12 @@ ul#nav li.current a { color: #fe6928; }
 
 #about h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
-   color: #fff;
+   color: white;
    margin-bottom: 12px;
 }
 #about p {
    line-height: 30px;
-   color: #ccc;
+   color: white;
 }
 #about .profile-pic {
    position: relative;
@@ -242,7 +242,7 @@ ul#nav li.current a { color: #fe6928; }
 /* ------------------------------------------------------------------ */
 
 #services {
-   background: #000524;
+   background: #5680E9;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
@@ -253,16 +253,16 @@ ul#nav li.current a { color: #fe6928; }
 
 #services h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
-   color: #fff;
+   color: white;
    margin-bottom: 12px;
 }
 #services p {
    line-height: 30px;
-   color: #ccc;
+   color: white;
 }
 #services ul {
    line-height: 30px;
-   color: #fff;
+   color: white;
 }
 #services .profile-pic {
    position: relative;
@@ -295,7 +295,7 @@ ul#nav li.current a { color: #fe6928; }
 /* ------------------------------------------------------------------ */
 
 #careers {
-   background: white;
+   background: #84CEEB;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
@@ -306,7 +306,7 @@ ul#nav li.current a { color: #fe6928; }
 
 #careers h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
-   color: black;
+   color: white;
    margin-bottom: 12px;
 }
 #careers p {
@@ -898,108 +898,11 @@ call-to-action .button {
 }
 
 /* ------------------------------------------------------------------ */
-/* c. About Section
-/* ------------------------------------------------------------------ */
-
-#about {
-   background: #000524;
-   padding-top: 96px;
-   padding-bottom: 66px;
-   overflow: hidden;
-}
-
-#about a, #about a:visited  { color: #fff; }
-#about a:hover, #about a:focus { color: #0762f9; }
-
-#about h2 {
-   font: 22px/30px 'opensans-bold', sans-serif;
-   color: #fff;
-   margin-bottom: 12px;
-}
-#about p {
-   line-height: 30px;
-   color: #ccc;
-}
-#about .profile-pic {
-   position: relative;
-   width: 120px;
-   height: 120px;
-   border-radius: 100%;
-}
-#about .contact-details { width: 41.66667%; }
-#about .download {
-   width: 58.33333%;
-   padding-top: 6px;
-}
-#about .main-col { padding-right: 5%; }
-#about .download .button {
-   margin-top: 6px;
-   background: #444;
-}
-#about .download .button:hover {
-   background: #fff;
-   color: #2B2B2B;
-}
-#about .download .button i {
-   margin-right: 15px;
-   font-size: 20px;
-}
-
-/* ------------------------------------------------------------------ */
-/* c. Services Section
-/* ------------------------------------------------------------------ */
-
-#services {
-   background: #000524;
-   padding-top: 96px;
-   padding-bottom: 66px;
-   overflow: hidden;
-}
-
-#services a, #services a:visited  { color: #fff; }
-#services a:hover, #services a:focus { color: #0762f9; }
-
-#services h2 {
-   font: 22px/30px 'opensans-bold', sans-serif;
-   color: #fff;
-   margin-bottom: 12px;
-}
-#services p {
-   line-height: 30px;
-   color: #ccc;
-}
-#services .profile-pic {
-   position: relative;
-   width: 120px;
-   height: 120px;
-   border-radius: 100%;
-}
-
-#services .contact-details { width: 41.66667%; }
-#services .download {
-   width: 58.33333%;
-   padding-top: 6px;
-}
-#services .main-col { padding-right: 5%; }
-#services .download .button {
-   margin-top: 6px;
-   background: #444;
-}
-#services .download .button:hover {
-   background: #fff;
-   color: #2B2B2B;
-}
-#services .download .button i {
-   margin-right: 15px;
-   font-size: 20px;
-}
-
-/* ------------------------------------------------------------------ */
 /* c. Contact Section
 /* ------------------------------------------------------------------ */
 
 #contact {
-   background: #000524;
+   background: #45A29E;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
@@ -1010,12 +913,12 @@ call-to-action .button {
 
 #contact h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
-   color: #fff;
+   color: white;
    margin-bottom: 12px;
 }
 #contact p {
    line-height: 30px;
-   color: #ccc;
+   color: white;
 }
 #contact .profile-pic {
    position: relative;
@@ -1186,7 +1089,7 @@ call-to-action .button {
 footer {
    padding-top: 48px;
    margin-bottom: 48px;
-   color: #303030;
+   color: black;
    font-size: 14px;
    text-align: center;
    position: relative;
@@ -1213,7 +1116,7 @@ footer .copyright li:before {
     content: "\2022";
     padding-left: 10px;
     padding-right: 10px;
-    color: #095153;
+    color: black;
 }
 footer .copyright  li:first-child:before {
     display: none;
@@ -1248,7 +1151,7 @@ footer .social-links li:first-child { margin-left: 0; }
 	display: block;
 	width: 60px;
 	height: 60px;
-	background-color: #525252;
+	background-color: #25274D;
 
 	-webkit-transition: all 0.2s ease-in-out;
    -moz-transition: all 0.2s ease-in-out;
@@ -1256,12 +1159,12 @@ footer .social-links li:first-child { margin-left: 0; }
    -ms-transition: all 0.2s ease-in-out;
    transition: all 0.2s ease-in-out;
 
-   color: #fff;
+   color: white;
    font-size: 21px;
    line-height: 60px;
  	border-radius: 100%;
 }
-#go-top a:hover { background-color: #0F9095; }
+#go-top a:hover { background-color: #9294cf; }
 
 
 .social .btn:first-child{

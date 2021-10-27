@@ -17,7 +17,7 @@ class About extends Component {
   render() {
     if (!this.props.data) return null;
 
-    const profilepic = "images/" + this.props.data.image;
+    const profilepic = "images/" + this.props.data.careerImage;
 
     const useStyles = makeStyles((theme) => ({
         finish: {
@@ -53,7 +53,7 @@ class About extends Component {
               <img
                 className="profile-pic"
                 src={profilepic}
-                alt="Nordic Giant Profile Pic"
+                alt="Career"
               />
             </div>
             <div className="nine columns main-col">
@@ -64,27 +64,27 @@ class About extends Component {
                             <form id="input-box" noValidate autoComplete="off" /*onSubmit={handleSubmit}*/>
                                 <TextField onChange={(event) => {
                                 // props.onChangeName(event.target.value)
-                                }} id="outlined-basic" style={{textAlign: 'left'}} label={<Typography id="typography">First name</Typography>} variant="outlined" inputProps={{min: 0, style: { textAlign: 'left', paddingTop: 30, fontSize: 20}}} />
+                                }} id="outlined-basic" style={{textAlign: 'left', backgroundColor: "white"}} label={<Typography id="typography">First name</Typography>} variant="outlined" inputProps={{min: 0, style: { textAlign: 'left', paddingTop: 30, fontSize: 20}}} />
                             </form>
                             <form id="input-box" noValidate autoComplete="off" /*onSubmit={handleSubmit}*/>
                             <TextField onChange={(event) => {
                                 // props.onChangePhone(event.target.value)
-                                }} id="outlined-basic" style={{textAlign: 'left'}} label={<Typography id="typography">Last name</Typography>} variant="outlined" inputProps={{min: 0, style: { textAlign: 'left', paddingTop: 30, fontSize: 20}}} />
+                                }} id="outlined-basic" style={{textAlign: 'left', backgroundColor: "white"}} label={<Typography id="typography">Last name</Typography>} variant="outlined" inputProps={{min: 0, style: { textAlign: 'left', paddingTop: 30, fontSize: 20}}} />
                             </form>
                             <form id="input-box" noValidate autoComplete="off" /*onSubmit={handleSubmit}*/>
                             <TextField onChange={(event) => {
                                 // props.onChangePhone(event.target.value)
-                                }} id="outlined-basic" style={{textAlign: 'left'}} label={<Typography id="typography">Email</Typography>} variant="outlined" inputProps={{min: 0, style: { textAlign: 'left', paddingTop: 30, fontSize: 20}}} />
+                                }} id="outlined-basic" style={{textAlign: 'left', backgroundColor: "white"}} label={<Typography id="typography">Email</Typography>} variant="outlined" inputProps={{min: 0, style: { textAlign: 'left', paddingTop: 30, fontSize: 20}}} />
                             </form>
                             <form id="input-box" noValidate autoComplete="off" /*onSubmit={handleSubmit}*/>
                             <TextField onChange={(event) => {
                                 // props.onChangePhone(event.target.value)
-                                }} id="outlined-basic" style={{textAlign: 'left'}} label={<Typography id="typography">Phone number</Typography>} variant="outlined" inputProps={{min: 0, style: { textAlign: 'left', paddingTop: 30, fontSize: 20}}} />
+                                }} id="outlined-basic" style={{textAlign: 'left', backgroundColor: "white"}} label={<Typography id="typography">Phone number</Typography>} variant="outlined" inputProps={{min: 0, style: { textAlign: 'left', paddingTop: 30, fontSize: 20}}} />
                             </form>
                             <form id="input-box" noValidate autoComplete="off" /*onSubmit={handleSubmit}*/>
                             <TextField onChange={(event) => {
                                 // props.onChangePhone(event.target.value)
-                                }} id="outlined-basic" style={{textAlign: 'left'}} label={<Typography id="typography">When can you start? (MM/DD/YY)</Typography>} variant="outlined" inputProps={{min: 0, style: { textAlign: 'left', paddingTop: 30, fontSize: 20}}} />
+                                }} id="outlined-basic" style={{textAlign: 'left', backgroundColor: "white"}} label={<Typography id="typography">When can you start? (MM/DD/YY)</Typography>} variant="outlined" inputProps={{min: 0, style: { textAlign: 'left', paddingTop: 30, fontSize: 20}}} />
                             </form>
                         </div>
                     </Grid>
@@ -106,7 +106,7 @@ class About extends Component {
                         //     emailTextFieldValue = "";
                         // }
                         }}>
-                        <Paper className={useStyles.finish} style={{fontSize: 28, color: 'white', backgroundColor: "#07080fdc", padding: .75, borderRadius: "7%", fontWeight: "700"}}>&#160;&#160;&#160;Apply&#160;&#160;&#160;</Paper>
+                        <Paper className={useStyles.finish} style={{fontSize: 28, color: 'white', backgroundColor: "#25274D", padding: .75, borderRadius: "7%", fontWeight: "700"}}>&#160;&#160;&#160;Apply&#160;&#160;&#160;</Paper>
                 </Button>
             </div>
           </div>

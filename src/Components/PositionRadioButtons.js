@@ -18,9 +18,9 @@ const useStyles = makeStyles((theme) =>
         flexGrow: 1,
     },
     checkboxLabel: {
-        color: "black",
+        color: "#25274D",
         fontSize: 20,
-    }
+    },
   })
 );
 
@@ -38,7 +38,7 @@ function PositionRadioButtons(props) {
                         row
                     >
                         <Grid item xs={6} style={{paddingLeft:"30px"}}>
-                        <FormControlLabel classes={{label:classes.checkboxLabel}} className={classes.smallRadioButton} value="Cleaner" control={<Radio />} label="Cleaner" />
+                        <FormControlLabel classes={{label:classes.checkboxLabel}} className={classes.smallRadioButton} value="Cleaner" control={<Radio color="secondary"/>} label="Cleaner" />
                         </Grid>
                         <Grid item xs={6} style={{paddingLeft:"30px"}}>
                         <FormControlLabel classes={{label:classes.checkboxLabel}} className={classes.smallRadioButton} value="Site Supervisor" control={<Radio />} label="Supervisor" />

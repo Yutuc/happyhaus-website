@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) =>
         flexGrow: 1,
     },
     checkboxLabel: {
-      color: "black",
+      color: "#25274D",
       fontSize: 20,
     }
   })

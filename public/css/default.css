@@ -87,8 +87,6 @@ e. Others
     word-wrap: break-word;
  }
  
- 
- 
  blockquote:before, blockquote:after,
  q:before, q:after {
     content: '';
