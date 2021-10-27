@@ -209,6 +209,7 @@ ul#nav li.current a { color: #25274D; }
    margin-bottom: 12px;
 }
 #about p {
+   font: 15px/20px 'opensans', sans-serif;
    line-height: 30px;
    color: white;
 }
@@ -257,10 +258,13 @@ ul#nav li.current a { color: #25274D; }
    margin-bottom: 12px;
 }
 #services p {
+   font: 15px/20px 'opensans', sans-serif;
    line-height: 30px;
    color: white;
 }
 #services ul {
+   font: 15px/20px 'opensans', sans-serif;
+
    line-height: 30px;
    color: white;
 }
@@ -310,6 +314,7 @@ ul#nav li.current a { color: #25274D; }
    margin-bottom: 12px;
 }
 #careers p {
+   font: 15px/20px 'opensans', sans-serif;
    line-height: 30px;
    color: black;
 }
@@ -917,6 +922,7 @@ call-to-action .button {
    margin-bottom: 12px;
 }
 #contact p {
+   font: 15px/20px 'opensans', sans-serif;
    line-height: 30px;
    color: white;
 }
