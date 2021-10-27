@@ -106,7 +106,7 @@ class About extends Component {
                         //     emailTextFieldValue = "";
                         // }
                         }}>
-                        <Paper className={useStyles.finish} style={{fontSize: 28, color: 'white', backgroundColor: "#25274D", padding: .75, borderRadius: "7%", fontWeight: "700"}}>&#160;&#160;&#160;Apply&#160;&#160;&#160;</Paper>
+                        <Paper className={useStyles.finish} style={{fontSize: 25, color: 'white', backgroundColor: "#25274D", padding: .75, borderRadius: "7%", fontWeight: "700"}}>&#160;&#160;&#160;Apply&#160;&#160;&#160;</Paper>
                 </Button>
             </div>
           </div>
