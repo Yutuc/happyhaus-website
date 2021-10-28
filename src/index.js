@@ -3,23 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { createMuiTheme, ThemeProvider } from "@material-ui/core";
-
-const theme = createMuiTheme({
-  palette: {
-     primary: {
-        main: "#ff8f00" // This is an orange looking color
-               },
-     secondary: {
-        main: "#ffcc80" //Another orange-ish color
-                }
-           },
-});
 
 ReactDOM.render(
-  <ThemeProvider theme={theme}>
-    <App />
-  </ThemeProvider>,
+    <App />,
   document.getElementById('root')
 );
 

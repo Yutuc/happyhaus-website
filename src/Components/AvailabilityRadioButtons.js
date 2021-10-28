@@ -32,19 +32,20 @@ function AvailabilityRadioButtons(props) {
             <Grid container direction="row" justifyContent="space-between">
                 <FormControl component="fieldset">
                     <RadioGroup
+                        onChange={props.onChangeAvailability}
                         aria-label="availability"
-                        defaultValue="Days"
+                        defaultValue="Day"
                         name="radio-buttons-group"
                         row
                     >
                         <Grid item xs={4} style={{paddingLeft:"30px"}}>
-                        <FormControlLabel classes={{label:classes.checkboxLabel}} className={classes.smallRadioButton} value="Days" control={<Radio />} label="Days" />
+                        <FormControlLabel classes={{label:classes.checkboxLabel}} className={classes.smallRadioButton} value="Day" control={<Radio />} label="Days" />
                         </Grid>
                         <Grid item xs={4} style={{paddingLeft:"30px"}}>
-                        <FormControlLabel classes={{label:classes.checkboxLabel}} className={classes.smallRadioButton} value="Evenings" control={<Radio />} label="Evenings" />
+                        <FormControlLabel classes={{label:classes.checkboxLabel}} className={classes.smallRadioButton} value="Evening" control={<Radio />} label="Evenings" />
                         </Grid>
                         <Grid item xs={4} style={{paddingLeft:"30px"}}>
-                        <FormControlLabel classes={{label:classes.checkboxLabel}} className={classes.smallRadioButton} value="Nights" control={<Radio />} label="Nights" />
+                        <FormControlLabel classes={{label:classes.checkboxLabel}} className={classes.smallRadioButton} value="Night" control={<Radio />} label="Nights" />
                         </Grid>
                     </RadioGroup>
                 </FormControl>

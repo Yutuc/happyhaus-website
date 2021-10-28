@@ -32,6 +32,7 @@ function PositionRadioButtons(props) {
             <Grid container direction="row" justifyContent="space-between" alignItems="center">
                 <FormControl component="fieldset">
                     <RadioGroup
+                        onChange={props.onChangePosition}
                         aria-label="position"
                         defaultValue="Cleaner"
                         name="radio-buttons-group"
