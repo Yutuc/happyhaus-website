@@ -10,6 +10,25 @@ import AvailabilityRadioButtons from "./AvailabilityRadioButtons";
 import PositionRadioButtons from "./PositionRadioButtons";
 
 class About extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      applyButtonPressed: false
+    }
+}
+
+  missingInputWarning = () => {
+    if(this.state.applyButtonPressed && this.props.mainState().firstName === "" && this.props.mainState().lastName === "" && this.props.mainState().fromEmail === "" && this.props.mainState().phoneNumber === "" && this.props.mainState().startDate === "") {
+      return (
+        <div style={{marginTop: "1rem", marginBottom: "1rem", fontSize: 18, textAlign: 'left', color: "black"}}>
+          Failed to submit job application. Please fill in every field then try again.
+        </div>
+      )
+    }
+  }
+
   render() {
     if (!this.props.data) return null;
 
@@ -77,7 +96,7 @@ class About extends Component {
                             <form id="input-box" noValidate autoComplete="off" onSubmit={handleSubmit}>
                             <TextField onChange={(event) => {
                                 this.props.onChangeStartDate(event.target.value)
-                                }} id="outlined-basic" style={{textAlign: 'left', backgroundColor: "white"}} label={<Typography id="typography">When can you start? (MM/DD/YY)</Typography>} variant="outlined" inputProps={{min: 0, style: { textAlign: 'left', paddingTop: 30, fontSize: 20}}} />
+                                }} id="outlined-basic" style={{textAlign: 'left', backgroundColor: "white"}} label={<Typography id="typography">When can you start? (MM/DD/YYYY)</Typography>} variant="outlined" inputProps={{min: 0, style: { textAlign: 'left', paddingTop: 30, fontSize: 20}}} />
                             </form>
                         </div>
                     </Grid>
@@ -86,20 +105,14 @@ class About extends Component {
                 <PositionRadioButtons onChangePosition={this.props.onChangePosition}/>
                 <h2 class="form-headers">Availability</h2>
                 <AvailabilityRadioButtons onChangeAvailability={this.props.onChangeAvailability}/>
+                {this.missingInputWarning()}
                 <Button style={{textTransform: 'none', float: 'right'}} onClick={() => {
-                        // if(nameTextFieldValue !== "" && phoneTextFieldValue !== "" && emailTextFieldValue !== "") {
-                        //     props.onAnswerSelected(props.question, 
-                        //     {
-                        //     name: nameTextFieldValue,
-                        //     phone: phoneTextFieldValue,
-                        //     email: emailTextFieldValue
-                        //     }, props.answerOptions[0].type);
-                        //     nameTextFieldValue = "";
-                        //     phoneTextFieldValue = "";
-                        //     emailTextFieldValue = "";
-                        // }
-                        this.props.submitJobApplication();
-                        }}>
+                        this.setState({
+                          applyButtonPressed: true
+                        });
+                        if(this.props.mainState().firstName !== "" && this.props.mainState().lastName !== "" && this.props.mainState().fromEmail !== "" && this.props.mainState().phoneNumber !== "" && this.props.mainState().startDate !== "") {
+                            this.props.submitJobApplication();
+                        }}}>
                         <Paper style={{fontSize: 25, color: 'white', backgroundColor: "#25274D", padding: .75, borderRadius: "7%", fontWeight: "700"}}>&#160;&#160;&#160;Apply&#160;&#160;&#160;</Paper>
                 </Button>
             </div>
