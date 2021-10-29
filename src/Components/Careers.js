@@ -20,7 +20,7 @@ class About extends Component {
 }
 
   missingInputWarning = () => {
-    if(this.state.applyButtonPressed && this.props.mainState().firstName === "" && this.props.mainState().lastName === "" && this.props.mainState().fromEmail === "" && this.props.mainState().phoneNumber === "" && this.props.mainState().startDate === "") {
+    if(this.state.applyButtonPressed && (this.props.mainState().firstName === "" || this.props.mainState().lastName === "" ||  this.props.mainState().fromEmail === "" || this.props.mainState().phoneNumber === "" || this.props.mainState().startDate === "")) {
       return (
         <div style={{marginTop: "1rem", marginBottom: "1rem", fontSize: 18, textAlign: 'left', color: "black"}}>
           Failed to submit job application. Please fill in every field then try again.
